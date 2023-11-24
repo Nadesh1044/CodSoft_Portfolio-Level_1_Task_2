@@ -1,0 +1,195 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pf.png">
+    <title>NADESH J- Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #3498db;
+            animation: backgroundTransition 10s infinite alternate;
+            overflow-y: scroll;
+            background-image: url("1.jpg");
+            height: 100vh;
+            background-size: cover ;
+            background-position: center;
+        }
+
+        @keyframes backgroundTransition {
+            from {
+                background-color: #3498db;
+            }
+            to {
+                background-color: #e74c3c;
+            }
+        }
+
+        .mode-switch {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 80px;
+            color: darkred;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            animation: fadeInUp 1s ease-out;
+            color: darkred;
+        }
+
+        header p {
+            font-size: 1.2em;
+            animation: fadeInUp 1s 0.5s ease-out;
+            color: darkred;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        main {
+            padding: 20px;
+            min-height: calc(100vh - 200px);
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        #about {
+            text-align: center;
+            margin-top: 50px;
+            background-color: #ecf0f1; 
+            border-radius: 10px; 
+            padding: 20px; 
+        }
+
+        #about img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #e74c3c;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        #about h2 {
+            font-size: 2em;
+            color: #2c3e50; 
+            margin-bottom: 20px;
+            animation: fadeInUp 1s 1s ease-out;
+        }
+
+        #about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #34495e;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s 2s ease-out;
+        }
+
+        footer {
+            text-align: center;
+            color: #ecf0f1;
+            background-color: #2c3e50;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        main {
+            min-height: calc(100vh - 100px); 
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="mode-switch">
+        <label class="switch">
+            <input type="checkbox" id="modeSwitch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <header>
+        <h1>NADESH J</h1>
+        <p>Web Developer</p>
+    </header>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certificate.html">Certificates</a>
+        <a href="Internship.html">Internship</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section id="about">
+<p> Certified by NPTEL for the course of "Irrigation and Drainage".</p>
+<p>Certified by NPTEL for the course of "Cognitive Psychology".</p>
+<p>Certified by NPTEL for the course of "Film Studies"</p>
+<p>Certified by TCSion for the course of “Interview Skills”.</p>
+<p>Certified by Hacker Rank for SQL basic, intermediate and advanced.</p>
+<p>Certified by LOG2BASE2 for “Introduction to Programming”.</p>
+<p>Certified by Great Learning for Introduction to Automation Testing ,Software Testing</p>
+</section>
+    </main>
+<br>
+    <footer>
+        <p>&copy; 2023 NADESH J. All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
